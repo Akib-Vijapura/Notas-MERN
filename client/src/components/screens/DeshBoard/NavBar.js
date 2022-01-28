@@ -31,9 +31,13 @@ const NavBar = () => {
             <Link to="/todo" className="mr-5 hover:text-gray-900">
               Take ToDO
             </Link>
-            <Link to="/mynotes" className="mr-5 hover:text-gray-900" href="takenotes.html">
+            <Link
+              to="/reminder"
+              className="mr-5 hover:text-gray-900"
+              href="takenotes.html"
+            >
               Set Reminder
-            </Link> 
+            </Link>
           </nav>
 
           {/* taildwin dropdown */}
