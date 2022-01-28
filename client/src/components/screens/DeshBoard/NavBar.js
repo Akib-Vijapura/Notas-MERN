@@ -28,12 +28,12 @@ const NavBar = () => {
             <img src={logo} alt="" width="100px" />
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            {/* <Link to="/mynotes" className="mr-5 hover:text-gray-900">
-              Take Notes
+            <Link to="/todo" className="mr-5 hover:text-gray-900">
+              Take ToDO
             </Link>
             <Link to="/mynotes" className="mr-5 hover:text-gray-900" href="takenotes.html">
-              Edit Notes
-            </Link> */}
+              Set Reminder
+            </Link> 
           </nav>
 
           {/* taildwin dropdown */}

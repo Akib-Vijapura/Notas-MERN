@@ -28,8 +28,8 @@ app.get("/", (req, res, next) => {
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/notes", require("./routes/notes"));
 app.use("/api/private", require("./routes/private"));
+app.use("/api/tasks", require("./routes/ToDos"));
 app.use("/api", require("./routes/feedback"));
-
 
 // Error Handler Middleware
 app.use(errorHandler);
@@ -37,13 +37,7 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () =>
-  {
-    console.log("┌──────────────────────────────────┐");
-    console.log("│   Notas app Server Started...    │");
-    console.log(`│   Listening on the port ${PORT}     │`);
-    console.log("│                                  │");
-    console.log("└──────────────────────────────────┘");
-  }
+  console.log(`Notas Server listening on http://localhost:${PORT} !`)
 );
 
 process.on("unhandledRejection", (err, promise) => {

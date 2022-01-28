@@ -16,6 +16,7 @@ import EditNote from "./components/screens/EditNote/EditNote";
 import ReadNote from "./components/screens/EditNote/ReadNote";
 import AccountSetting from "./components/screens/AccountSetting/AccountSetting";
 import FeedBack from "./components/screens/FeedBack/FeedBack";
+import ToDo from "./components/screens/ToDo/ToDo"
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
             component={AccountSetting}
           />
           <PrivateRoute exact path="/feedback" component={FeedBack} />
+          <PrivateRoute exact path="/todo" component={ToDo} />
           <Route exact path="/login" component={LoginScreen} />
           <Route exact path="/register" component={RegisterScreen} />
           <Route
