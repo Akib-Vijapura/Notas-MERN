@@ -14,6 +14,7 @@ import {
 } from "./reducers/userReducers";
 import { userFeedbackReducer } from "./reducers/feedbackReducers";
 
+
 const reducer = combineReducers({
   // this will combine our reducers
   userLogin: userLoginReducer,
@@ -24,6 +25,7 @@ const reducer = combineReducers({
   noteUpdate: noteUpdateReducer,
   noteDelete: noteDeleteReducer,
   userFeedback: userFeedbackReducer,
+
 });
 
 const userInfoFromStorage = localStorage.getItem("authToken")
